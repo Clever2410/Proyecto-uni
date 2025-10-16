@@ -1,118 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maquetacion</title>
-  <link rel="stylesheet" href="Estilos/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación con Flexbox</title>
+    <link rel="stylesheet" href="Estilos/estilo.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="Imagenes/logo.png"><img src="Imagenes/logo.png" alt=""></a>
-      <h2>Axel Sistemas</h2>
-    </div>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="01-Nosotros.html">Quienes somos</a>
-      <a href="04-Servicios.html">Nuestros servicios</a>
-      <a href="03-Blog.html">Noticias</a>
-      <a href="02-Contacto.html">Contacto</a>
-    </nav>
-    <button class="buscarbtn">Buscar</button>
-  </header>
-  <section class="headline">
-    <article class="derecha">
-      <h2>Headline 2</h2>
-      <h3>Subtitulos</h3>
-    </article>
-    <article class="izquierda">
-      <h2>Headline 2</h2>
-      <h3>Subtitulos</h3>
-    </article>
-  </section>
-  <section class="main">
-    <h3>Bienvenidos a Servicio informatico Axel</h3>
-    <h1>Su servicio tecnico de confianza</h1>
+    <header class="header">
+        <div class="logo">
+            <img src="Imagenes/LOGO.png" alt="">
+        </div>
+         <h1>Servicio Tecnico informatico Axel</h1>
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="Somos.html">Quienes Somos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="#">Blog</a>
+        </nav>
+        <div class="search">&#128269;</div>
+    </header>
+    <section class="top-section">
+        <div class="headline-box">
+            <h2>Servicios que ofrecemos:</h2>
+            <br>
+            <p class="servicios-p">
+            <strong>Reparación y mantenimiento de computadoras y laptops</strong>
+                  Diagnóstico completo, limpieza interna. cambios de pieza, formateo y 
+                  optimización del sistema <br>
+            <strong>
+                 Instalación de sistemas operativos y programas
+             </strong> 
+                 Windows, Linu, paquetes de office, antivirus y software especializado
+                 según tus necesidades <br>
+            <strong>
+                Recuperación de datos y eliminación de virus
+             </strong>
+                 Rescatamos tu información y eliminamos amenazas que afectan el rendimiento de tu equipo <br>
+                <strong>
+                    Configuración de redes e internet
+                </strong>
+                Instalacion de routers, configuración Wi-fi, redes domésticas y empresariales
+                </p>
+                <br>
+                <br>
+                <button class="info-servicio">
+                    <a href="">
+                        Mas información
+                    </a>
+                </button>
+        </div>
+        <div class="headline-box">
+            <h2 class="Sub-Quienes">Quienes Somos</h2>
+            <br>
+            <p class="Informacion-Quienes-somos">En Servicio Tecnico Informatico Axel, somos una empresa
+                dedicada al mantenimiento, reparación y soporte técnico
+                de equipos informatico.
+                Nacimos con el objetivo de ofrecer soluciones
+                tecnologicas confiables, rápidas y accesibles para los
+                usuarios de Guayaramerín - Beni, Bolivia.
+                Contamos con Experiencia en el diágnostico y reparación de computadoras,
+                laptops e impresoras, además de ofrecer asesoramiento técnico personalizado
+                para empresas e instituciones.
+                Nuestro Servicio es brindar un servicio profesional basado en la honestidad,
+                calidad y la satisfacción del cliente.
+                Entendemos lo importante que es tu equipo para tu trabajo
+                o estudio, por eso nos esforzamos en garantizar resultados eficientes y duraderos
+            </p>
+            <br>
+            <br>
+            <button class="Boton-informacion">
+                <a href="#">Mas informacion</a>
+            </button>
+        </div>
+    </section>
 
-    <div class="botones">
-      <button class="izq">Boton 1</button>
-      <button class="Centro">Boton 2</button>
-      <button class="Der">Boton 3</button>
-    </div>
-  </section>
-  <section class="secciones">
-    <article class="articulo-izquierdo">
-      <img src="Imagenes/soporte.jpg" alt="Soporte tecnico">
-      <section >
-        <h2>SOPORTE TECNICO</h2>
-        <p>Servicios informaticos Axel, realiza soporte tecnico a domicilio y en nuestras oficinas</p>
-        <a href="https://invgate.com/es/itsm/service-request-management/it-support"><button>Más información</button></a>
-      </section>
-    </article>
-    <article class="articulo-central">
-      <img src="Imagenes/Asistencia.jpg" alt="Camaras CCTV" class="CCTV">
-      <section>
-        <h2>ASISTENCIA TECNICA</h2>
-        <p>Brindamos asistencia tecnica remota y presencial brindando calidad en nuestros trabajos</p>
-        <a href="https://www.infobae.com/tecno/2024/03/29/glosario-de-tecnologia-que-significa-asistencia-tecnica/"><button>Más información</button></a>
-      </section>
-    </article>
-    <article class="articulo-derecho">
-      <img src="Imagenes/impresora.jpg" alt="Reparacion de impresoras">
-      <section>
-        <h2>REPARACION DE IMPRESORAS</h2>
-        <p>Mantenimiento y reparacion de impresoras de todos los modelos</p>
-        <a href="https://www.santisoluciones.com/blog/todo-sobre-reparacion-de-impresoras/"><button>Más información</button></a>
-      </section>
-    </article>
-  </section>
-<footer>
-  <div>
-    <h2>SERVICIOS INFORMATICOS AXEL</h2>
-    <input type="text">
-    <button>ACCION 1</button>
-    <img src="Imagenes/logo.png" alt="Logo empresa">
-  </div>
-  <section class="enlaces-footer">
-    <article id="Primero">
-      <h4></h4>
-        <ul>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-        </ul>
-    </article>
-    <article id="Segundo">
-      <h4></h4>
-        <ul>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-        </ul>
-    </article>
-    <article id="Tercero">
-      <h4></h4>
-        <ul>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-        </ul>
-    </article>
-    <article id="Cuarto">
-      <h4></h4>
-        <ul>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-          <li><a href="">Pc escritorio</a></li>
-        </ul>
-    </article>
-  </section>
-</footer>
+    <section class="slider">
+        <button class="arrow">&lt;</button>
+        <div class="slider-content">
+            <h3>BIENVENIDO A TU SERVICIO TECNICO INFORMATICO</h3>
+            <h1>AXEL SISTEMAS</h1>
+            <div class="slider-buttons">
+                <button class="servicio">Servicios informaticos</button>
+                <button class="Tienda">Tienda Digital</button>
+                <button class="asistencia">Asistencia Online</button>
+            </div>
+        </div>
+        <button class="arrow">&gt;</button>
+    </section>
+
+    <section class="sections">
+        <div class="card">
+            <div class="img-placeholder"><img src="Imagenes/tecnico2.jpg" alt=""></div>
+            <h3>Reparaciones</h3>
+            <p>Diagnóstico, mantenimientos y reparación de Pc y laptops</p>
+            <button>Mas Info</button>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">
+                <img src="Imagenes/disco.jpg" alt="">
+            </div>
+            <h3>Catalogos</h3>
+            <p>Explora nuestros productos tecnológicos y accesorios disponibles</p><br>
+            <button>Mas Info</button>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">
+                <img src="Imagenes/software.jpg" alt="">
+            </div>
+
+            <h3>Software</h3>
+            <p>Encuentra sistemas operativos, licencias de software mas instaladores listos</p>
+            <button>Mas Info</button>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h3>¿Tu computadora presenta fallas?</h3>
+        <div class="consul-input">
+            <input type="text" placeholder="Describe brevemente tu problema">
+            <button>Enviar consulta</button>
+        </div>
+        <div class="logo">
+            <img src="Imagenes/logo.png" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>SERVICIOS</h4>
+                <p>Reparacion de laptops y PCs<br>Instalación de sistemas operativos<br>Recuperacion de datos</p>
+            </div>
+            <div>
+                <h4>SOPORTE TECNICO</h4>
+                <p>Diagnostico gratuito<br>Asistencia remota<br>Configuracion de red</p>
+            </div>
+            <div>
+                <h4>PRODUCTOS</h4>
+                <p>Accesorios informaticos<br>Componentes y repuestos<br>Equipos reacondicionados</p>
+            </div>
+            <div>
+                <h4>CONTACTANOS</h4>
+                <p>+591 60209035 - 75191935<br>Serviciosinformaticosaxel@gmail.com<br>Guayaramerin - Beni - Bolivia</p>
+            </div>
+            <div class="social">
+                <h4>REDES SOCIALES</h4>
+                <ul>
+                    <li>🔵 Facebook</li>
+                    <li>🟣 Instagram</li>
+                    <li>🟢 Whatsapp</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">COPYRIGHT</p>
+    </footer>
 </body>
-
 </html>
